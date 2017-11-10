@@ -1,0 +1,374 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "PTSansNarrow", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+input {
+  font-family: "PTSansNarrow", sans-serif;
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.container {
+  padding: 0;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.index__header {
+  padding: 0;
+  width: 960px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.index-nav {
+  padding: 27px 0 0 0;
+}
+.menu{
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.menu__item{
+  float: left;
+  display: block;
+}
+
+.menu__item--login {
+  float:right;
+  position: relative;
+}
+
+.menu__item--login::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url("../img/index-login.png") no-repeat;
+  position: absolute;
+  left: 14px;
+  top: 2px;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  padding: 25px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.menu__link:hover {
+  background-color: #242424;
+}
+
+.login__button {
+  padding-left: 40px;
+}
+
+.bg-section {
+  flex-grow: 1;
+  background: url("../img/index-bg.jpeg") no-repeat center top;
+  background-size: фгещauto;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages__logo {
+  margin: 0 auto;
+  padding: 60px 0 80px 0;
+  width: 371px;
+  height: 155px;
+  background: url("../img/index-logo.png") no-repeat center;
+}
+
+.advantages__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 300px;
+  color: white;
+  vertical-align: top;
+}
+
+.advantages__title{
+  margin: 0;
+  font-size: 30px;
+  padding-bottom: 50px;
+  background: url("../img/index-shape.png") no-repeat;
+  background-position: center 50px;
+}
+
+.advantages__text {
+  line-height: 1.75;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.news-photo {
+  margin-top: 55px;
+}
+
+.news-photo__news {
+  float: left;
+}
+
+.news-photo__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+.news-photo__text {
+  margin: 0;
+  width: 350px;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.news-photo__date {
+  margin: 0;
+  margin: 5px 0 24px;
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.news-photo__date:nth-child(2) {
+  margin-bottom: 0px;
+}
+
+.news-photo__photo {
+  float: right;
+  width: 300px;
+}
+
+.news-photo__img {
+  display: block;
+  box-sizing: border-box;
+  width: 300px;
+  border: 7px solid #fff;
+  margin-bottom: 38px;
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  width: 140px;
+  line-height: 42px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background: black;
+  transition: background-color 0.3s ease;
+}
+
+.news-photo__news-button {
+  margin-top: 30px;
+}
+
+.news-photo__photo-buttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+}
+
+.btn-prev::before {
+  content:"Назад";
+}
+
+.btn-next::before {
+  content: "Вперед";
+}
+
+.contacts-visit__buttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 26px;
+  font-size: 0;
+}
+
+.white-box {
+  display: block;
+  padding: 50px 80px;
+  background: url("../img/separator2.png") no-repeat center,
+  url("../img/sector3.png");
+}
+
+.contacts-visit {
+  margin-top: 35px;
+  margin-bottom: 64px;
+}
+
+.contacts-visit__contacts {
+  float: left;
+}
+
+.contacts-visit__title{
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.contacts-visit__text {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.contacts-visit__visit {
+  display: block;
+  width: 300px;
+  float: right;
+}
+
+.contacts-visit__form {
+  font-size: 0;
+}
+
+.form__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__input {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "PTSansNarrow", sans-serif;
+  font-weight: bold;
+  padding-left: 15px;
+  color: #706f6d;
+  width: 140px;
+  line-height: 36px;
+  border: 2px solid black;
+  background: none;
+  transition: background-color 0.3s ease;
+}
+
+.form__input--name {
+  text-transform: capitalize;
+}
+
+.form__text-block {
+  display: table;
+  width: 300px;
+  margin: 15px 0;
+}
+
+.form__text {
+  display: table-cell;
+  font-size: 16px;
+  padding-left: 20px;
+  width: 150px;
+}
+
+.form__button {
+  width: 100%;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.footer {
+  padding-top: 60px;
+  height: 130px;
+  width: auto;
+  line-height: 8px;
+  background: url("../img/footer-bg.jpeg");
+  color: #fff;
+}
+
+.footer__contacts {
+  display: inline-block;
+  width: 400px;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #a6a6a6;
+}
+
+.footer__social {
+  display: inline-block;
+  width: 140px;
+  vertical-align: top;
+  text-align: center;
+}
+.footer__dev {
+  display: inline-block;
+  width: 140px;
+  float: right;
+  text-align: center;
+}
+
+.footer__social-box {
+  width: 140px;
+  font-size: 0;
+}
+
+.soc-button {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background-color: black;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.soc-button--vk {
+  background-image: url("../img/vk.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.soc-button--fb {
+  background-image: url("../img/facebook.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.soc-button--inst {
+  background-image: url("../img/instagram.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.button:hover,
+.soc-button:hover {
+  background-color: #663d15;
+}
+
+.form__input:hover {
+  border-color: #663d15;
+}
+
+.soc-button:nth-child(3) {
+  margin-right: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
